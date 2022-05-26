@@ -19,7 +19,7 @@ export default {
   setup() {
     const { count, countPlus1 } = useGlobal();
 
-    // should trigger countPlus1 computed to update
+    // should trigger countPlus1 computed to update and watchers
     count.value = Math.ceil(Math.random() * 1000);
 
     return { count, countPlus1 };
